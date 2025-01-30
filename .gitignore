@@ -1,0 +1,21 @@
+# Ignore build output
+bin/
+obj/
+
+# Ignore SQLite database
+*.db
+
+# Ignore Visual Studio specific files
+*.user
+.vscode/
+.vs/
+
+# Ignore environment-specific settings
+appsettings.*.local.json
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.swp
