@@ -4,7 +4,7 @@ A simple Note-Taking API built with .NET 6+ using minimal APIs, SQLite (or in-me
 
 ## Features
 - **CRUD Operations**: Create, Read, Update, Delete notes.
-- **AI Integration**: Automatically generate summaries for notes using OpenAI API (GPT-3 or GPT-4).
+- **AI Integration**: Automatically generate summaries for notes using OpenAI API (GPT-3.5).
 - **Persistent Storage**: SQLite database (can be switched to In-Memory for testing).
 
 ## Prerequisites
@@ -22,7 +22,21 @@ Clone the project to your local machine:
 git clone https://github.com/Paulo-Moraes05/NoteTakingAPI.git
 cd NoteTakingAPI
 ```
-## 2. Install Dependencies
+
+## 2. Create a web application
+
+In VS Code:
+- Install C# Dev Kit and C# extensions
+- Login with your Microsoft account
+- >.NET Install Tool: Install the .NET SDK System-Wide
+- >.NET: New Project...
+      --> ASP.NET Core Web API
+
+Click on the following link for a tutorial on Visual Studio 2022:
+
+[Visual Studio .NET Web Application setup](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022)
+
+## 3. Install Dependencies
 
 Make sure you have the required dependencies installed:
 
@@ -30,7 +44,7 @@ Make sure you have the required dependencies installed:
 dotnet restore
 ```
 
-## 3. Configure OpenAI API Key
+## 4. Configure OpenAI API Key
 
 - Go to the [OpenAI API keys page](https://platform.openai.com/api-keys)
 - Create a new API key if you don't have one
@@ -43,7 +57,7 @@ $env:OpenAI__ApiKey="your_openai_api_key_here"
 
 Make sure to replace `your_openai_api_key_here` with your own.
 
-## 4. Build and Run the Application
+## 5. Build and Run the Application
 
 After configuring everything, run:
 
@@ -61,7 +75,7 @@ info: Microsoft.Hosting.Lifetime[0]
 
 In this case, access the application using `http://localhost:5226/notes`. However, the address can change depending on your machine.
 
-## 5. Testing the Application
+## 6. Testing the Application
 
 The base URL for the API is: `http://localhost:5226/notes
 
